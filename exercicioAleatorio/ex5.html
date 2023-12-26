@@ -1,0 +1,31 @@
+→ Operadores Lógicos 
+
+1º →    ! NÃO (not)
+2º →    && E (and)
+3º →    || OU (or)
+
+5 - Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5. Contudo, se qualquer uma das notas for 0, o aluno estará reprovado automaticamente. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execício Lógico (operadores lógicos)</title>
+</head>
+<body>
+    <script>
+        var nota1 = Number(prompt(`Digite a primeira nota: `));
+        var nota2 = Number(prompt(`Digite a segunda nota: `));
+        media = (nota1+nota2)/2;
+        if (nota1 === 0 || nota2 === 0) {
+            alert(`Reprovado, pois uma das notas foi 0!`);
+        } else if (media > 5) {
+            alert(`Aluno aprovado!`);
+        } else {
+            alert(`Aluno reprovado!`);
+        }
+
+    </script>
+</body>
+</html>

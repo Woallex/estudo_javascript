@@ -1,0 +1,46 @@
+4 - Fazer jogador1 e jogador2 amobs digitarem um número, se forem iguais, mostrar a mensagem 'EMPATE', sortear um numero entre 0 e 1. 
+→ Se o número sorteado for 0, ganha quem escolheu o número menor. 
+→ Se o número sorteado for 1, ganha quem escolheu o numero maior.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lógico</title>
+</head>
+<body>
+    <script>
+        var jogador1 = Number(prompt(`Jogador 1, digite um número: `));
+        var jogador2 = Number(prompt(`Jogador 2, digite um número: `));
+        if (jogador1 > jogador2) {
+            alert(`Jogador 1, ganhou!`);
+        } else if (jogador2 > jogador1) {
+            alert(`Jogador 2, ganhou!`);
+        } else if (jogador1 === jogador2) {
+            alert(`EMPATE!`);
+            var jogador1 = Number(prompt(`Jogador 1, digite um número: `));
+            var jogador2 = Number(prompt(`Jogador 2, digite um número: `));
+            while (jogador1 === jogador2){
+                alert(`Fora escolhido números iguais, vamos para uma nova escolha...`);
+                var jogador1 = Number(prompt(`Jogador 1, digite um número: `));
+                var jogador2 = Number(prompt(`Jogador 2, digite um número: `));
+                sorteio = parseInt(Math.random() * 2);} // Forma de fazer o sorteio: math.random() → ele sorteia aleatoriamente números de 0 á 0.999999, mas nunca chega em 1. Ele multiplicado por 2 sorteia aleatoriamente números de 0 á 1.99999, mas nunca chega em 2. E o parseInt transforma o número para inteiro.
+                alert(`O número sorteado foi: ${sorteio}`);
+                if (sorteio === 0) {
+                    if (jogador1 < jogador2) {
+                        alert(`Jogador 1, ganhou!`);
+                    } else {
+                        alert(`Jogador 2, ganhou!`);
+                    }
+                } else if (sorteio === 1) {
+                    if (jogador1 > jogador2) {
+                        alert(`Jogador 1, ganhou!`);
+                    } else {
+                        alert(`Jogador 2, ganhou!`);
+                    }
+                }
+        }
+    </script>
+</body>
+</html>

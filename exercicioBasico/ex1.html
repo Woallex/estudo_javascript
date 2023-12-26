@@ -1,0 +1,24 @@
+1 - Crie uma função que determine se um número é par ou ímpar.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Número Par ou Ímpar</title>
+</head>
+<body>
+    <script>
+        function verificarParOuImpar(numero) {
+            if (numero % 2 === 0){
+                return "Par";
+            } else {
+                return "Impar";
+            }
+        }
+
+        var numero = Number(prompt(`Digite um número: `));
+        var resultado = verificarParOuImpar(numero);
+        alert("O número é " + resultado);
+    </script>
+</body>
+</html>

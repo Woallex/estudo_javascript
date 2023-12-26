@@ -1,0 +1,30 @@
+02 - Pedri para o usuário digitar dois números, convertelos para inteiro mostrar:
+soma, subtração, multiplicação, divisão, resto da divisão e n1 elevado a n2.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Lógica</title>
+</head>
+<body>
+    
+    <script>
+
+        var num1 = prompt(`Digite um número: `);
+        var num2 = prompt(`Digite outro número: `);
+        num1 = parseInt(num1); // Conversão para inteiro, tbm arredonda o número
+        num2 = parseInt(num2); // Conversão para inteiro
+        var soma = num1 + num2
+        var subtracao = num1 - num2
+        var multiplicacao = num1 * num2
+        var divisao = num1 / num2
+        var rdivisao = num1 % num2
+        var potencia = num1 ** num2
+        alert(`Os números: ${num1} e ${num2} \n Soma: ${soma} \n Subtração: ${subtracao} \n Multiplicação: ${multiplicacao}\n Divisão: ${divisao} \n Resto da divisão: ${rdivisao} \n Potencia: ${potencia}`);
+
+    </script>
+
+</body>
+</html>
