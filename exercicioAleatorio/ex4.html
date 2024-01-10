@@ -25,21 +25,22 @@
                 alert(`Fora escolhido números iguais, vamos para uma nova escolha...`);
                 var jogador1 = Number(prompt(`Jogador 1, digite um número: `));
                 var jogador2 = Number(prompt(`Jogador 2, digite um número: `));
-                sorteio = parseInt(Math.random() * 2);} // Forma de fazer o sorteio: math.random() → ele sorteia aleatoriamente números de 0 á 0.999999, mas nunca chega em 1. Ele multiplicado por 2 sorteia aleatoriamente números de 0 á 1.99999, mas nunca chega em 2. E o parseInt transforma o número para inteiro.
-                alert(`O número sorteado foi: ${sorteio}`);
-                if (sorteio === 0) {
-                    if (jogador1 < jogador2) {
-                        alert(`Jogador 1, ganhou!`);
-                    } else {
-                        alert(`Jogador 2, ganhou!`);
-                    }
-                } else if (sorteio === 1) {
-                    if (jogador1 > jogador2) {
-                        alert(`Jogador 1, ganhou!`);
-                    } else {
-                        alert(`Jogador 2, ganhou!`);
-                    }
+                
+            sorteio = parseInt(Math.random() * 2);} // Forma de fazer o sorteio: math.random() → ele sorteia aleatoriamente números de 0 á 0.999999, mas nunca chega em 1. Ele multiplicado por 2 sorteia aleatoriamente números de 0 á 1.99999, mas nunca chega em 2. E o parseInt transforma o número para inteiro.
+            alert(`O número sorteado foi: ${sorteio}`);
+            if (sorteio === 0) {
+                if (jogador1 < jogador2) {
+                    alert(`Jogador 1, ganhou!`);
+                } else {
+                    alert(`Jogador 2, ganhou!`);
                 }
+            } else if (sorteio === 1) {
+                if (jogador1 > jogador2) {
+                    alert(`Jogador 1, ganhou!`);
+                } else {
+                    alert(`Jogador 2, ganhou!`);
+                }
+            }
         }
     </script>
 </body>
